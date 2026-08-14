@@ -4,6 +4,10 @@
 
 **Silences all SteamVR controller haptics, globally — no per-game setup.**
 
+[![Downloads](https://img.shields.io/github/downloads/KanaiCasual/NullHaptics/total?label=downloads)](https://github.com/KanaiCasual/NullHaptics/releases)
+[![Latest release](https://img.shields.io/github/v/release/KanaiCasual/NullHaptics)](https://github.com/KanaiCasual/NullHaptics/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 <br clear="left">
 
 NullHaptics is a tiny SteamVR add-on driver that forces every haptic (vibration)
