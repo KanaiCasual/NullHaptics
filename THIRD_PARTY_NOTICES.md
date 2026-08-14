@@ -16,8 +16,8 @@ reproduced in full at the paths listed below.
 
 - Purpose: SteamVR driver interface definitions (`openvr_driver.h`).
 - Source: https://github.com/ValveSoftware/openvr
-- License: BSD 3-Clause. The full text is available in the OpenVR repository
-  (`LICENSE`). Only the single header `third_party/openvr_driver.h` is vendored.
+- License: BSD 3-Clause — see `third_party/openvr-LICENSE.txt`. Only the single
+  header `third_party/openvr_driver.h` is vendored.
 - Copyright (c) 2015 Valve Corporation.
 
 NullHaptics is not affiliated with, endorsed by, or sponsored by Valve
