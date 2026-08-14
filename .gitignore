@@ -1,0 +1,15 @@
+# Build output
+/build/
+/dist/
+
+# The distributable exe ships as a GitHub Release asset, not in the repo.
+*.exe
+
+# Visual Studio / CMake local files
+.vs/
+CMakeUserPresets.json
+*.user
+
+# OS cruft
+Thumbs.db
+desktop.ini

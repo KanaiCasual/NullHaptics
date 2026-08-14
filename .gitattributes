@@ -1,0 +1,6 @@
+# Normalize text files to LF in the repository; check out native on each OS.
+* text=auto
+
+# Binary assets — never normalize or diff as text.
+*.png binary
+*.ico binary
