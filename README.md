@@ -2,7 +2,7 @@
 
 # NullHaptics
 
-**Silences all SteamVR controller haptics, globally — no per-game setup.**
+**A quality-of-life plugin that turns off *all* SteamVR controller vibration — once, for every game.**
 
 [![Downloads](https://img.shields.io/github/downloads/KanaiCasual/NullHaptics/total?label=downloads)](https://github.com/KanaiCasual/NullHaptics/releases)
 [![Latest release](https://img.shields.io/github/v/release/KanaiCasual/NullHaptics)](https://github.com/KanaiCasual/NullHaptics/releases/latest)
@@ -10,15 +10,35 @@
 
 <br clear="left">
 
-NullHaptics is a tiny SteamVR add-on driver that forces every haptic (vibration)
-pulse to zero amplitude before it reaches your controllers. It works for every
-game and overlay at once — OpenVR and OpenXR titles alike — instead of making you
-disable rumble game by game. A small installer app registers the driver, shows its
-status, and removes it again.
+Ever got annoyed by the constant buzzing — and then had to dig through the settings
+of *every single game* to switch it off, one by one? Some games bury the option,
+some don't have one at all, and the rumble drains your controller batteries the
+whole time.
+
+**NullHaptics fixes that in one click.** Install it once and controller haptics go
+quiet across your entire library — every game and overlay, OpenVR and OpenXR alike —
+with no per-game fiddling ever again. Changed your mind? Click **Uninstall** and
+the buzz is back. That's the whole plugin.
 
 <p align="center">
   <img src="docs/screenshot.png" alt="NullHaptics installer window" width="440">
 </p>
+
+### Why you might want this
+
+- 🔇 **Silence everywhere, instantly** — one install covers your whole SteamVR library.
+- 🔋 **Save controller battery** — no motors spinning means longer play sessions.
+- 🧩 **No per-game setup** — works even in games that hide or lack a rumble toggle.
+- ♿ **Comfort & accessibility** — great if vibration is distracting, uncomfortable, or a sensory issue.
+- ↩️ **Fully reversible** — toggle it off any time from the app or SteamVR's add-on list.
+
+### How it works (the short version)
+
+It's a tiny SteamVR add-on driver that catches every vibration request the moment
+before it reaches your controllers and turns its strength down to zero. No files in
+your games are touched, nothing is modified permanently — SteamVR just stops being
+told to buzz. Curious about the details? It's ~90 lines in
+[`src/driver.cpp`](src/driver.cpp), explained further [below](#how-it-works).
 
 ## Requirements
 
